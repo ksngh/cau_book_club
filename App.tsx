@@ -25,15 +25,7 @@ const App: React.FC = () => {
     <div className="flex justify-center min-h-screen">
       <div className="w-full max-w-[430px] bg-bg-light dark:bg-bg-dark min-h-screen relative flex flex-col shadow-2xl border-x border-slate-200 dark:border-slate-800">
         
-        {/* iOS Status Bar Mock */}
-        <div className="h-[44px] flex justify-between items-center px-6 pt-2 sticky top-0 bg-inherit z-50 backdrop-blur-md">
-          <span className="text-xs font-semibold">9:41</span>
-          <div className="flex items-center space-x-1.5">
-            <span className="material-symbols-outlined text-sm">signal_cellular_4_bar</span>
-            <span className="material-symbols-outlined text-sm">wifi</span>
-            <span className="material-symbols-outlined text-sm">battery_full</span>
-          </div>
-        </div>
+        {/* top status mock removed */}
 
         {selectedBookId && selectedBook ? (
           <BookDetail 
@@ -57,10 +49,7 @@ const App: React.FC = () => {
           </span>
         </button>
 
-        {/* Bottom Safety Area Mock */}
-        <div className="h-[34px] w-full flex justify-center items-end pb-2">
-          <div className="w-1/3 h-[5px] bg-slate-200 dark:bg-slate-800 rounded-full"></div>
-        </div>
+        {/* bottom safety area removed */}
       </div>
     </div>
   );

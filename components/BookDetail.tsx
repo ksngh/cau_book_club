@@ -20,9 +20,8 @@ export const BookDetail: React.FC<BookDetailProps> = ({ book, onBack }) => {
           <span className="material-symbols-outlined align-middle text-[20px]">arrow_back_ios_new</span>
         </button>
         <h1 className="text-md font-bold tracking-tight text-slate-800 dark:text-slate-100">도서 상세 정보</h1>
-        <button className="p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
-          <span className="material-symbols-outlined align-middle text-[22px]">share</span>
-        </button>
+        {/* spacer to keep header title centered when right-side action is removed */}
+        <div className="w-10" aria-hidden="true" />
       </header>
 
       <main className="pb-12">
