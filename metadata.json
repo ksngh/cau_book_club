@@ -1,0 +1,8 @@
+{
+  "name": "Gemini Book Club",
+  "description": "A sophisticated book club application featuring a curated list of modern thought classics and detailed discussion insights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

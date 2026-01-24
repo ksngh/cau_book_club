@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ko" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Book Club</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2C3E50",
+              accent: "#6366f1",
+              "bg-light": "#FDFCFB",
+              "bg-dark": "#0f172a",
+            },
+            fontFamily: {
+              display: ["'Playfair Display'", "serif"],
+              sans: ["'Noto Sans KR'", "'Inter'", "sans-serif"],
+            },
+            borderRadius: {
+              'ios': '1.5rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      body { -webkit-tap-highlight-color: transparent; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 dark:bg-slate-950 font-sans antialiased transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
