@@ -31,25 +31,28 @@
     ]
   },
   {
-    "id": "on-liberty",
-    "title": "자유론",
-    "author": "존 스튜어트 밀",
-    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/on%20liberty.jpg?raw=true",
-    "description": "개인의 자유와 사회적 개입의 경계를 역사적·철학적으로 논의하는 중요한 정치철학서입니다.",
-    "reviews": [
-      {
-        "id": "o-r1",
-        "userName": "선영",
-        "initials": "SY",
-        "time": "5시간 전",
-        "avatarColor": "bg-amber-100 text-amber-600 dark:bg-amber-900",
-        "content": "현대 사회에도 시사하는 바가 많은 책이네요. 토론하니 관점이 넓어졌어요."
-      }
-    ],
+    "id": "norwegian-wood",
+    "title": "노르웨이의 숲",
+    "author": "무라카미 하루키",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/norwegian%20wood.jpg?raw=true",
+    "reviews": [],
     "meetings": [
       {
-        "date": "2026-02-14T18:30:00",
-        "location": "성수동 북카페 '고요'"
+        "date": "2026-02-22T11:00:00",
+        "location": "미정"
+      }
+    ]
+  },
+  {
+    "id": "pride-prejudice",
+    "title": "오만과 편견",
+    "author": "제인 오스틴",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/pride%20and%20prejudice.jpg?raw=true",
+    "reviews": [],
+    "meetings": [
+      {
+        "date": "2026-03-22T11:00:00",
+        "location": "미정"
       }
     ]
   },
@@ -61,8 +64,8 @@
     "reviews": [
       {
         "id": "b-r1",
-        "userName": "박지훈",
-        "initials": "JH",
+        "userName": "정도",
+        "initials": "JD",
         "time": "어제",
         "avatarColor": "bg-rose-100 text-rose-600 dark:bg-rose-900",
         "content": "단편들의 상상력이 뛰어나네요. SF적 상상력과 인간적 감정의 조화가 좋았습니다."
@@ -70,8 +73,8 @@
     ],
     "meetings": [
       {
-        "date": "2026-02-21T19:30:00",
-        "location": "온라인 (Zoom)"
+        "date": "2026-04-12T11:00:00",
+        "location": "미정"
       }
     ]
   },
@@ -102,25 +105,32 @@
     ],
     "meetings": [
       {
-        "date": "2026-03-06T15:00:00",
-        "location": "문화센터 A룸"
+        "date": "2026-05-17T11:00:00",
+        "location": "미정"
       }
     ]
   },
   {
-    "id": "pride-prejudice",
-    "title": "오만과 편견",
-    "author": "제인 오스틴",
-    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/pride%20and%20prejudice.jpg?raw=true",
-    "reviews": [],
-    "meetings": []
-  },
-  {
-    "id": "norwegian-wood",
-    "title": "노르웨이의 숲",
-    "author": "무라카미 하루키",
-    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/norwegian%20wood.jpg?raw=true",
-    "reviews": [],
-    "meetings": []
+    "id": "on-liberty",
+    "title": "자유론",
+    "author": "존 스튜어트 밀",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/on%20liberty.jpg?raw=true",
+    "description": "개인의 자유와 사회적 개입의 경계를 역사적·철학적으로 논의하는 중요한 정치철학서입니다.",
+    "reviews": [
+      {
+        "id": "o-r1",
+        "userName": "선영",
+        "initials": "SY",
+        "time": "5시간 전",
+        "avatarColor": "bg-amber-100 text-amber-600 dark:bg-amber-900",
+        "content": "현대 사회에도 시사하는 바가 많은 책이네요. 토론하니 관점이 넓어졌어요."
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-05-17T11:00:00",
+        "location": "미정"
+      }
+    ]
   }
 ]
