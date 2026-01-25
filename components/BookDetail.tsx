@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Book } from '../types';
-import { REVIEWS } from '../constants';
 
 interface BookDetailProps {
   book: Book;
@@ -66,24 +65,37 @@ export const BookDetail: React.FC<BookDetailProps> = ({ book, onBack }) => {
           <div className="bg-accent text-white p-7 rounded-ios shadow-xl shadow-accent/20 relative overflow-hidden group">
             <div className="absolute -right-8 -top-8 w-40 h-40 bg-white/10 rounded-full blur-3xl group-hover:scale-110 transition-transform"></div>
             <div className="relative z-10 space-y-5">
-              <div className="flex items-start gap-4">
-                <div className="bg-white/20 p-2.5 rounded-xl shadow-sm">
-                  <span className="material-symbols-outlined text-[20px]">calendar_today</span>
-                </div>
-                <div>
-                  <p className="text-[11px] text-white/70 font-medium uppercase tracking-wider">날짜 및 시간</p>
-                  <p className="text-lg font-bold">2024년 6월 15일 (토) 오후 3:00</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="bg-white/20 p-2.5 rounded-xl shadow-sm">
-                  <span className="material-symbols-outlined text-[20px]">location_on</span>
-                </div>
-                <div>
-                  <p className="text-[11px] text-white/70 font-medium uppercase tracking-wider">장소</p>
-                  <p className="text-lg font-bold underline underline-offset-8 decoration-white/30">성수동 북카페 '고요'</p>
-                </div>
-              </div>
+              {book.meetings && book.meetings.length > 0 ? (
+                // show the first (next) meeting; if you prefer a list, map over meetings
+                (() => {
+                  const next = book.meetings![0];
+                  const dateStr = new Date(next.date).toLocaleString();
+                  return (
+                    <>
+                      <div className="flex items-start gap-4">
+                        <div className="bg-white/20 p-2.5 rounded-xl shadow-sm">
+                          <span className="material-symbols-outlined text-[20px]">calendar_today</span>
+                        </div>
+                        <div>
+                          <p className="text-[11px] text-white/70 font-medium uppercase tracking-wider">날짜 및 시간</p>
+                          <p className="text-lg font-bold">{dateStr}</p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <div className="bg-white/20 p-2.5 rounded-xl shadow-sm">
+                          <span className="material-symbols-outlined text-[20px]">location_on</span>
+                        </div>
+                        <div>
+                          <p className="text-[11px] text-white/70 font-medium uppercase tracking-wider">장소</p>
+                          <p className="text-lg font-bold underline underline-offset-8 decoration-white/30">{next.location ?? '미정'}</p>
+                        </div>
+                      </div>
+                    </>
+                  );
+                })()
+              ) : (
+                <div className="text-white/80">해당 도서에 등록된 모임 일정이 없습니다.</div>
+              )}
             </div>
           </div>
         </section>
@@ -93,23 +105,23 @@ export const BookDetail: React.FC<BookDetailProps> = ({ book, onBack }) => {
           <div className="flex items-center justify-between mb-6 px-1">
             <h3 className="text-xl font-bold dark:text-white">Community Reflections</h3>
             <span className="text-xs text-slate-400 font-semibold tracking-wide uppercase">
-              {REVIEWS.length * 3} Reviews
+              {book.reviews ? book.reviews.length : 0} Reviews
             </span>
           </div>
           <div className="space-y-4">
-            {REVIEWS.map((review) => (
+            {(book.reviews || []).map((review) => (
               <div key={review.id} className="bg-white dark:bg-slate-800/40 p-5 rounded-ios border border-slate-100 dark:border-slate-800 shadow-sm transition-all hover:shadow-md">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className={`w-9 h-9 rounded-full flex items-center justify-center text-[10px] font-black ${review.avatarColor}`}>
-                    {review.initials}
+                  <div className={`w-9 h-9 rounded-full flex items-center justify-center text-[10px] font-black ${review.avatarColor ?? 'bg-slate-100 text-slate-700'}`}>
+                    {review.initials ?? (review.userName ? review.userName.slice(0,2) : '')}
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm font-bold dark:text-slate-100">{review.userName}</span>
-                    <span className="text-[10px] text-slate-400 font-medium">{review.time}</span>
+                    <span className="text-sm font-bold dark:text-slate-100">{review.userName ?? (review.author)}</span>
+                    <span className="text-[10px] text-slate-400 font-medium">{review.time ?? ''}</span>
                   </div>
                 </div>
                 <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed font-normal">
-                  {review.content}
+                  {review.content ?? review.text}
                 </p>
               </div>
             ))}

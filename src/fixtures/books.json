@@ -1,0 +1,126 @@
+[
+  {
+    "id": "aristotle",
+    "title": "아리스토텔레스의 시학",
+    "author": "아리스토텔레스",
+    "coverUrl": "static\\images\\시학.jpg",
+    "description": "고전 서사와 비극의 구조를 분석하며 문학과 표현의 근간을 짚어보는 철학 고전입니다.",
+    "reviews": [
+      {
+        "id": "a-r1",
+        "userName": "성호",
+        "initials": "KSH",
+        "time": "3일 전",
+        "avatarColor": "bg-indigo-100 text-indigo-600 dark:bg-indigo-900",
+        "content": "시학을 통해 서사의 힘을 새롭게 이해하게 되었어요. 고전의 통찰이 깊습니다."
+      },
+      {
+        "id": "a-r2",
+        "userName": "현재",
+        "initials": "HJ",
+        "time": "1주 전",
+        "avatarColor": "bg-teal-100 text-teal-600 dark:bg-teal-900",
+        "content": "텍스트가 밀도 높지만 토론해볼 만한 구절이 많습니다. 모임에서 이야기하고 싶어요."
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-02-07T19:00:00",
+        "location": "중앙도서관 세미나룸"
+      }
+    ]
+  },
+  {
+    "id": "on-liberty",
+    "title": "자유론",
+    "author": "존 스튜어트 밀",
+    "coverUrl": "static\\images\\자유론.jpg",
+    "description": "개인의 자유와 사회적 개입의 경계를 역사적·철학적으로 논의하는 중요한 정치철학서입니다.",
+    "reviews": [
+      {
+        "id": "o-r1",
+        "userName": "선영",
+        "initials": "SY",
+        "time": "5시간 전",
+        "avatarColor": "bg-amber-100 text-amber-600 dark:bg-amber-900",
+        "content": "현대 사회에도 시사하는 바가 많은 책이네요. 토론하니 관점이 넓어졌어요."
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-02-14T18:30:00",
+        "location": "성수동 북카페 '고요'"
+      }
+    ]
+  },
+  {
+    "id": "becoming-cyborg",
+    "title": "사이보그가 되다",
+    "author": "김초엽",
+    "coverUrl": "static\\images\\사이보그가 되다.jpg",
+    "reviews": [
+      {
+        "id": "b-r1",
+        "userName": "박지훈",
+        "initials": "JH",
+        "time": "어제",
+        "avatarColor": "bg-rose-100 text-rose-600 dark:bg-rose-900",
+        "content": "단편들의 상상력이 뛰어나네요. SF적 상상력과 인간적 감정의 조화가 좋았습니다."
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-02-21T19:30:00",
+        "location": "온라인 (Zoom)"
+      }
+    ]
+  },
+  {
+    "id": "hail-mary",
+    "title": "프로젝트 헤일메리",
+    "author": "앤디 위어",
+    "category": "SF / Thriller",
+    "description": "인류의 멸망을 막기 위해 머나먼 우주로 홀로 떠난 과학자 라일랜드 그레이스의 고군분투를 다룹니다.",
+    "coverUrl": "static\\images\\헤일메리.jpg",
+    "reviews": [
+      {
+        "id": "h-r1",
+        "userName": "소윤",
+        "initials": "SY",
+        "time": "2일 전",
+        "avatarColor": "bg-rose-100 text-rose-600 dark:bg-rose-900",
+        "content": "모임에서 나눌 이야기가 정말 많을 것 같습니다. 벌써 기대되네요."
+      },
+      {
+        "id": "h-r2",
+        "userName": "세정",
+        "initials": "SJ",
+        "time": "어제",
+        "avatarColor": "bg-amber-100 text-amber-600 dark:bg-amber-900",
+        "content": "앤디 위어 특유의 유머와 과학적 디테일이 잘 어우러져서 읽기 좋았어요."
+      }
+    ],
+    "meetings": [
+      {
+        "date": "2026-03-06T15:00:00",
+        "location": "문화센터 A룸"
+      }
+    ]
+  },
+  {
+    "id": "pride-prejudice",
+    "title": "오만과 편견",
+    "author": "제인 오스틴",
+    "coverUrl": "static\\images\\오만과 편견.jpg",
+    "reviews": [],
+    "meetings": []
+  },
+  {
+    "id": "norwegian-wood",
+    "title": "노르웨이의 숲",
+    "author": "무라카미 하루키",
+    "coverUrl": "static\\images\\노르웨이의 숲.jpg",
+    "reviews": [],
+    "meetings": []
+  }
+]

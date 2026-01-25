@@ -7,6 +7,8 @@ export interface Book {
   category?: string;
   description?: string;
   reflection?: string;
+  reviews?: Review[];
+  meetings?: Meeting[];
 }
 
 export interface Review {
