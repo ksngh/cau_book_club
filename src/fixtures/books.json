@@ -3,7 +3,7 @@
     "id": "aristotle",
     "title": "아리스토텔레스의 시학",
     "author": "아리스토텔레스",
-    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/poetry.jpg?raw=true",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/poetics.jpg?raw=true",
     "description": "고전 서사와 비극의 구조를 분석하며 문학과 표현의 근간을 짚어보는 철학 고전입니다.",
     "reviews": [
       {
@@ -34,7 +34,7 @@
     "id": "on-liberty",
     "title": "자유론",
     "author": "존 스튜어트 밀",
-    "coverUrl": "static/images/자유론.jpg",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/on liberty.jpg?raw=true",
     "description": "개인의 자유와 사회적 개입의 경계를 역사적·철학적으로 논의하는 중요한 정치철학서입니다.",
     "reviews": [
       {
@@ -57,7 +57,7 @@
     "id": "becoming-cyborg",
     "title": "사이보그가 되다",
     "author": "김초엽",
-    "coverUrl": "static\\images\\사이보그가 되다.jpg",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/i, cyborg.jpg?raw=true",
     "reviews": [
       {
         "id": "b-r1",
@@ -81,7 +81,7 @@
     "author": "앤디 위어",
     "category": "SF / Thriller",
     "description": "인류의 멸망을 막기 위해 머나먼 우주로 홀로 떠난 과학자 라일랜드 그레이스의 고군분투를 다룹니다.",
-    "coverUrl": "static\\images\\헤일메리.jpg",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/project hail mary.jpg?raw=true",
     "reviews": [
       {
         "id": "h-r1",
@@ -111,7 +111,7 @@
     "id": "pride-prejudice",
     "title": "오만과 편견",
     "author": "제인 오스틴",
-    "coverUrl": "static\\images\\오만과 편견.jpg",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/pride and prejudice.jpg?raw=true",
     "reviews": [],
     "meetings": []
   },
@@ -119,7 +119,7 @@
     "id": "norwegian-wood",
     "title": "노르웨이의 숲",
     "author": "무라카미 하루키",
-    "coverUrl": "static\\images\\노르웨이의 숲.jpg",
+    "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/norwegian wood.jpg?raw=true",
     "reviews": [],
     "meetings": []
   }
