@@ -6,7 +6,20 @@ import { Book } from './types';
 import { BOOKS } from './constants';
 
 const App: React.FC = () => {
-  const [selectedBookId, setSelectedBookId] = useState<string | null>(null);
+  const [selectedBookId, setSelectedBookId] = useState<string | null>(() => {
+    // Initialize from URL param or history state so deep links / reloads work
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('book');
+      if (id) return id;
+    } catch (e) {
+      // ignore in non-browser environments
+    }
+    // fallback to history.state (if user navigated via pushState)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const initialState = (window.history && (window.history.state as any));
+    return initialState && initialState.selectedBookId ? initialState.selectedBookId : null;
+  });
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -19,7 +32,40 @@ const App: React.FC = () => {
 
   const toggleTheme = () => setIsDarkMode(prev => !prev);
 
+  // Helper to open a book and push a history entry so browser back works
+  const openBook = (id: string) => {
+    setSelectedBookId(id);
+    try {
+      window.history.pushState({ selectedBookId: id }, '', `?book=${encodeURIComponent(id)}`);
+    } catch (e) {
+      // ignore if pushState not available
+    }
+  };
+
   const selectedBook = BOOKS.find(b => b.id === selectedBookId);
+
+  // Listen for popstate (browser back / forward / hardware back on mobile)
+  useEffect(() => {
+    const onPop = (ev: PopStateEvent) => {
+      // Try state first, then URL param
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const state = (ev.state as any) || {};
+      if (state && state.selectedBookId) {
+        setSelectedBookId(state.selectedBookId);
+        return;
+      }
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('book');
+        setSelectedBookId(id);
+      } catch (e) {
+        setSelectedBookId(null);
+      }
+    };
+
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, []);
 
   return (
     <div className="flex justify-center min-h-screen">
@@ -30,12 +76,13 @@ const App: React.FC = () => {
         {selectedBookId && selectedBook ? (
           <BookDetail 
             book={selectedBook} 
-            onBack={() => setSelectedBookId(null)} 
+            // use history.back so browser / mobile back buttons behave consistently
+            onBack={() => window.history.back() } 
           />
         ) : (
           <BookList 
             books={BOOKS} 
-            onSelectBook={setSelectedBookId} 
+            onSelectBook={openBook} 
           />
         )}
 
