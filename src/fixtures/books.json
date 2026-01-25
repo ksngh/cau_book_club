@@ -3,7 +3,7 @@
     "id": "aristotle",
     "title": "아리스토텔레스의 시학",
     "author": "아리스토텔레스",
-    "coverUrl": "static\\images\\시학.jpg",
+  "coverUrl": "static/images/시학.jpg",
     "description": "고전 서사와 비극의 구조를 분석하며 문학과 표현의 근간을 짚어보는 철학 고전입니다.",
     "reviews": [
       {
@@ -34,7 +34,7 @@
     "id": "on-liberty",
     "title": "자유론",
     "author": "존 스튜어트 밀",
-    "coverUrl": "static\\images\\자유론.jpg",
+  "coverUrl": "static/images/자유론.jpg",
     "description": "개인의 자유와 사회적 개입의 경계를 역사적·철학적으로 논의하는 중요한 정치철학서입니다.",
     "reviews": [
       {

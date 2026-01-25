@@ -13,10 +13,10 @@ export const BookList: React.FC<BookListProps> = ({ books, onSelectBook }) => {
       {/* Header */}
       <header className="px-6 py-6 border-b border-slate-100 dark:border-slate-800 bg-inherit">
         <p className="text-[10px] text-slate-400 dark:text-slate-500 font-bold tracking-[0.2em] uppercase mb-1">
-          Curated List
+          중앙가르드 독서모임
         </p>
         <h1 className="font-display text-4xl font-bold italic text-primary dark:text-white">
-          Book Club
+          CAU Book Club
         </h1>
       </header>
 
