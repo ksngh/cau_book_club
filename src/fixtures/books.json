@@ -8,11 +8,11 @@
     "reviews": [
       {
         "id": "a-r1",
-        "userName": "성호",
-        "initials": "KSH",
+        "userName": "소윤",
+        "initials": "SY",
         "time": "3일 전",
         "avatarColor": "bg-indigo-100 text-indigo-600 dark:bg-indigo-900",
-        "content": "시학을 통해 서사의 힘을 새롭게 이해하게 되었어요. 고전의 통찰이 깊습니다."
+        "content": "이 책의 내용은 이미 삶 속의 본질과 맞닿아 있다는 설명을 통해, 읽는 동안 내용이 어쩌면 당연하게 느껴졌던 이유를 깨닫는 경험이었다. 문학 작품 감상 시에 막연히 느꼈던 감정들을 구조와 원리로 배우며, 앞으로는 더 깊이 분석해보고 싶다는 생각이 들었다."
       },
       {
         "id": "a-r2",
@@ -20,13 +20,13 @@
         "initials": "HJ",
         "time": "1주 전",
         "avatarColor": "bg-teal-100 text-teal-600 dark:bg-teal-900",
-        "content": "텍스트가 밀도 높지만 토론해볼 만한 구절이 많습니다. 모임에서 이야기하고 싶어요."
+        "content": "오랜만에 이야기와 삶에 대한 학론적인 사고를 해보게 되었습니다"
       }
     ],
     "meetings": [
       {
         "date": "2026-02-22T11:00:00",
-        "location": "미정"
+        "location": "어센티카커피"
       }
     ]
   },
@@ -35,11 +35,28 @@
     "title": "노르웨이의 숲",
     "author": "무라카미 하루키",
     "coverUrl": "https://github.com/ksngh/cau_book_club/blob/main/static/images/norwegian%20wood.jpg?raw=true",
-    "reviews": [],
+    "reviews": [
+      {
+        "id": "a-r1",
+        "userName": "소윤",
+        "initials": "SY",
+        "time": "3일 전",
+        "avatarColor": "bg-indigo-100 text-indigo-600 dark:bg-indigo-900",
+        "content": "일상의 흐름 같은 문장들 속에서 의미를 찾기 어려웠지만, ‘상실의 시대’라는 다른 제목을 통해 작품이 사랑과 죽음, 그리고 각자가 상실을 마주하고 극복하는 방식에 대한 이야기임을 이해할 수 있었다. 당시 청년들의 혼란이 다양한 방식으로 나타나며 인물들의 관계와 감정을 통해 잘 전달되는 점이 인상깊었다."
+      },
+      {
+        "id": "a-r2",
+        "userName": "현재",
+        "initials": "HJ",
+        "time": "1주 전",
+        "avatarColor": "bg-teal-100 text-teal-600 dark:bg-teal-900",
+        "content": "누구나 가지고 있는 결핍과 혼란(특히 청춘이라는 시기 속에서의)에 대해 느낄 수 있었고 더 생각해볼 수 있었습니다"
+      }
+    ],
     "meetings": [
       {
         "date": "2026-02-22T11:00:00",
-        "location": "미정"
+        "location": "어센티카커피"
       }
     ]
   },
